@@ -14,12 +14,6 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Pages\Expenses\" />
-    <Folder Include="Pages\Statistics\" />
-    <Folder Include="Pages\Trips\" />
-  </ItemGroup>
-
-  <ItemGroup>
     <Resource Include="Resources\categories.png" />
     <Resource Include="Resources\chart.png" />
     <Resource Include="Resources\Corporate_Travel_Policy_1200x600.png" />
