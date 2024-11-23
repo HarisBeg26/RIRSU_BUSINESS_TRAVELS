@@ -2,3 +2,51 @@
 @model RIRSU_BUSINESS_TRAVELS.Pages.Expenses.ExpensesListPageModel
 @{
 }
+
+<!DOCTYPE html> 
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <title>Expense List - Business Travel Tracker</title>
+        <link rel="stylesheet" href="~/css/styles.css" />
+    </head>
+    <body>
+        <header style="background-color: #4A90E2; padding: 20px; color: white; text-align: left;">
+            <h1>Seznam stroškov</h1>
+        </header>
+        <div style="display: grid; grid-template-columns: 200px 1fr; gap: 20px; margin:20px;">
+            <div style="background-color:#F5F5F5; border:1px solid gray; padding:10px;">
+                <button type="button" style="background-color: #4A90E2; color:white; width:100%; margin-bottom:10px;padding: 10px;" onclick="location.href=/Expenses/AddExpensePage">
+                    Novi strošek
+                </button>
+                <button type="button" style="background-color:#800000; color: white; width:100%; margin-bottom:10px; padding:10px;">Izbriši strošek</button>    
+                <ul style="list-style:none; padding-left:0;">
+                    <li style="padding:10px; background-color:#e8e8e8; margin-bottom;5px; cursor:pointer;"
+                </ul>
+            </div>
+            <div style="background-color:#EEEEEE; padding:20px; border:1px solid gray;">
+                <h2>Strošek</h2>
+                <form method="post">
+                    <div style="display:grid; grid-template-columns:1fr 2fr; gap: 10px;">
+                        <div>
+                            <label for="category" style="font-weight:bold;">Kategorija stroška</label>
+                            <input type="text" id="category" name="Category" />
+                        </div>
+                        <div>
+                            <label for="amount" style="font-weight:bold;">Znesek:</label>
+                            <input type="number" id="amount" name="Amount" />
+                        </div>
+                        <div>
+                            <label for="description" style="font-weight:bold;">Opis stroška</label>
+                            <input type="text" id="description" name="Description" />
+                        </div>
+                    </div>
+                    <div style="text-align: center; margin-top:20px;">
+                        <button type="submit" style="background-color:#4A90E2; color: white; padding:10px 20px; border: none; cursor:pointer;">Uredi</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </body>
+</html>
