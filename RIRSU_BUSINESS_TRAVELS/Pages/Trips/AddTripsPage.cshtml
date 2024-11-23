@@ -2,3 +2,44 @@
 @model RIRSU_BUSINESS_TRAVELS.Pages.Trips.AddTripsPageModel
 @{
 }
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <title>Add Trip - Business Travel Tracker</title>
+        <link rel="stylesheet" href="~/css/styles.css" />
+        </head>
+    <body>
+        <header style="background-color:#800000; padding:20px; color:white; text-align:left;">
+            <h1>Potovanja</h1>
+        </header>
+
+        <div style="background:#EEEEEE; margin:20px; padding:20px;">
+            <form method="post">
+                <div style="display:grid; grid-template-columns: 1fr 2fr; gap: 10px;">
+                    <div>
+                        <label for="destination" style="font-weight:bold;">Destinacija</label>
+                        <input type="text" id="destination" name="Destination" required />
+                    </div>
+                    <div>
+                        <label for="startDate" style="font-weight:bold;">Datum začetka</label>
+                        <input type="date" id="startDate" name="StartDate" required/>
+                    </div>
+                    <div>
+                        <label for="endDate" style="font-weight:bold;">Datum konca</label>
+                        <input type="date" id="endDate" name="EndDate" required />
+                    </div>
+                    <div>
+                        <label for="purpose" style="font-weight:bold;">Namen potovanja</label>
+                        <inpnut type="text" id="purpose" name="Purpose" required/>
+                    </div>
+                    <div style="grid-column: span 2; text-align: center;">
+                        <button type="submit" style="background-color: #800000; color: white; padding: 10px 20px; border: none; cursor: pointer;">Dodaj potovanje</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </body>
+</html>
