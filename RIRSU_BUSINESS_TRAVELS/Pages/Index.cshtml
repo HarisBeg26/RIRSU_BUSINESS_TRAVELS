@@ -4,7 +4,51 @@
     ViewData["Title"] = "Home page";
 }
 
-<div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://learn.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
-</div>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Landing Page - Business Travel Tracker</title>
+    <link rel="stylesheet" href="~/css/styles.css" />
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <!-- Header Section -->
+    <header style="background-color: #3B4FC7; padding: 20px 0; text-align: center; color: white;">
+        <h1>Dobrodošel Janez Novak</h1>
+    </header>
+
+    <!-- Content Section with Navigation Panels -->
+    <div style="display: flex; flex-wrap: wrap; justify-content: space-between; margin: 20px;">
+        <!-- Panel 1: Travels -->
+        <div style="flex: 1 1 30%; background-color: #F3F3F3; border-radius: 10px; margin: 10px; padding: 20px; text-align: center;">
+            <img src="/Resources/Corporate_Travel_Policy_1200x600.png" alt="Travels" width="131" height="112"/>
+            <h2 style="font-size: 16px; font-weight: bold; margin-top: 10px;">POTOVANJA</h2>
+            <p style="font-size: 12px; color: gray;">Dodajanje in urejanje potovanj</p>
+            <button onclick="location.href='/Trips'" style="padding: 10px 20px; background-color: #3B4FC7; color: white; border: none; border-radius: 5px;">Go to Travels</button>
+        </div>
+
+        <!-- Panel 2: Expenses -->
+        <div style="flex: 1 1 30%; background-color: #F3F3F3; border-radius: 10px; margin: 10px; padding: 20px; text-align: center;">
+            <img src="/Resources/expense.png" alt="Expenses" width="131" height="112"/>
+            <h2 style="font-size: 16px; font-weight: bold; margin-top: 10px;">STROŠKI</h2>
+            <p style="font-size: 12px; color: gray;">Dodajanje in urejanje stroškov</p>
+            <button onclick="location.href='/Expenses'" style="padding: 10px 20px; background-color: #3B4FC7; color: white; border: none; border-radius: 5px;">Go to Expenses</button>
+        </div>
+
+        <!-- Panel 3: Expense Chart -->
+        <div style="flex: 1 1 30%; background-color: #F3F3F3; border-radius: 10px; margin: 10px; padding: 20px; text-align: center;">
+            <img src="/Resources/chart.png" alt="Charts" width="131" height="112"/>
+            <h2 style="font-size: 16px; font-weight: bold; margin-top: 10px;">GRAFI STROŠKOV</h2>
+            <p style="font-size: 12px; color: gray;">Pregled stroškov na grafih</p>
+            <button onclick="location.href='/Statistics'" style="padding: 10px 20px; background-color: #3B4FC7; color: white; border: none; border-radius: 5px;">Go to Chart</button>
+        </div>
+    </div>
+
+    <!-- Footer Section -->
+    <footer style="background-color: #3B4FC7; color: white; text-align: center; padding: 10px;">
+        <p>&copy; 2024 Business Travel Tracker</p>
+    </footer>
+</body>
+</html>
