@@ -2,3 +2,65 @@
 @model RIRSU_BUSINESS_TRAVELS.Pages.Trips.TripsListPageModel
 @{
 }
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <title>Trip List - Business Travel Tracker</title>
+        <link rel="stylesheet" href="~/css/styles.css" />
+        <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    </head>
+    <body>
+    <div style="background-color: #333333; height: 100vh;">
+        <div style="background-color: #800000; color: white; padding: 20px; font-size: 16px; font-weight: bold; text-align: left;">
+            <h1>Potovanja</h1>
+        </div>
+        <div action="display: flex; margin: 10px";>
+            <div style="width: 200px; background-color: #F5F5F5; padding: 10px;">
+                <button itemid="btn_AddTravelRedirect" onclick="location.href='/Trips/AddTripsPage'"
+                style="background-color:#4CAF50; color: white; width:100%; margin-bottom:10px;">
+                Novo potovanje
+            </button>
+            <button id="btn_DeleteTravel" style="background-color:#800000; color:white; width:100%; margin-bottom:10px; padding:10px;">
+                Izbriši potovanje
+            </button>
+
+            <ul id="tripList" style="list-style-type:none; padding-left:0;">
+                <li style="padding:5px; margin-bottom:5px; background-color:#FFFFFF; border-radius:5px; cursor:pointer;">
+
+                </li>
+            </ul>
+            </div>
+            <div style="flex-grow:1; border-left: 1px solid gray; background-color:#EEEEEE; padding:20px;">
+                <h2>Podrobnosti potovanja</h2>
+                <form method="post">
+                    <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 10px;margin-bottom:20px;">
+                        <div>
+                            <label for="Purpose" style="font-weight:bold;">Ime potovanja</label>
+                            <input type="text" id="Purpose" name="Purpose" 
+                                   style="width: 100%; padding: 8px; border-radius: 5px; border: 1px solid #ccc;" />
+                        </div>
+                        <div>
+                            <label for="StartDate" style="font-weight: bold;">Datum začetka</label>
+                            <input type="date" id="StartDate" name="StartDate"
+                                   style="width: 100%; padding: 8px; border-radius: 5px; border: 1px solid #ccc;" />
+                        </div>
+                        <div>
+                            <label for="Destination" style="font-weight: bold;">Destinacija</label>
+                            <input type="text" id="Destination" name="Destination" style="width:100%; padding:8px; border-radius:5px; border:1px solid #ccc;" />
+                         </div>
+                         <div>
+                             <label for="EndDate" style="font-weight:bold;">Datum konca:</label>
+                             <input type="date" id="EndDate" style="width:100%; padding:8px; border-radius:5px;border:1px solid #ccc;" />
+                         </div>
+                    </div>
+                    <button type="submit" style="background-color: #800000; color:white; padding:10px 20px; border:none; border-radius:5px;">
+                        Uredi
+                    </button>                         
+                </form>
+            </div>
+        </div>
+    </body>
+</html>
