@@ -1,0 +1,56 @@
+# .NET Core
+bin/
+obj/
+
+# User-specific files
+.idea/
+.vscode/
+
+# Windows image file caches
+Thumbs.db
+ehthumbs.db
+
+# Windows Installer files
+*.cab
+*.msi
+*.msm
+*.msp
+
+# Windows Installer logs
+*.cab
+*.msi
+*.msm
+*.msp
+
+# ASP.NET Scaffolding
+ScaffoldingReadMe.txt
+
+# Node.js dependencies (if applicable)
+node_modules/
+
+# Logs
+*.log
+
+# OS-generated files
+.DS_Store
+desktop.ini
+
+# JetBrains Rider
+.idea/
+
+# Visual Studio for Mac
+.vscode/
+.idea/
+
+# User-specific Visual Studio files
+.vs2019/
+.vs2017/
+
+# User-specific files for Visual Studio
+.vs/
+.vscode/
+
+# ASP.NET Core development certificates
+https://github.com/dotnet/corefx/issues/26412
+*.crt
+*.key
